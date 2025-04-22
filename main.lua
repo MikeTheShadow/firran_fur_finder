@@ -37,7 +37,7 @@ end
 local function checkDirty(item,name)
     if item and item.evolvingInfo and item.evolvingInfo.remainTime then
             local rt = item.evolvingInfo.remainTime
-            if rt.day == 0 and rt.hour == 0 and rt.minute == 0 and rt.second == 0 or true then
+            if rt.day == 0 and rt.hour == 0 and rt.minute == 0 and rt.second == 0 then
                 ShowWindow("YOUR " .. name .. " IS DIRTY!")
             end
     end
